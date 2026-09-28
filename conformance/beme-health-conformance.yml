@@ -1,0 +1,15 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.hazel.co/resources/our-commitment-to-supporting-student-well-being-privacy-and-trust
+sources:
+- https://www.hazel.co/resources/our-commitment-to-supporting-student-well-being-privacy-and-trust
+- https://www.hazel.co/pages/notice-of-privacy-practices
+- https://www.hazel.co/pages/privacy-policy
+standards:
+- id: hipaa
+  conforms: true
+  evidence: All health information shared with a Hazel clinician is treated as private medical information. It is protected under federal and
+    state laws, including HIPAA for healthcare providers...
+docs: https://www.hazel.co/resources/our-commitment-to-supporting-student-well-being-privacy-and-trust
+note: 1 extracted row(s) were dropped because their quote was not on the page.

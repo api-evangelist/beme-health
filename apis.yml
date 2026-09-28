@@ -1,23 +1,74 @@
 aid: beme-health
+
 name: BeMe Health
-description: 'BeMe Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/6726adae0a7647e5cdcb00e3/68474e66e54ff774a3c054b2_hazel-og.jpg
+
+description: 'BeMe Health, operating under the brand Hazel Health, provides K‑12 telehealth services, offering virtual mental and physical health care for students through school district partnerships. The company focuses on equitable access to pediatric care, integrating therapy, medical consultations, and wellness resources via its online platform.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beme-health/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Health
+- Telehealth
+- K-12
+- Education
+- Pediatrics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/beme-health-conformance.yml
+- type: Hosts
+  url: hosts/beme-health-hosts.yml
+- type: Vendors
+  url: vendors/beme-health-vendors.yml
+- type: TermsOfService
+  url: https://www.hazel.co/pages/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.hazel.co/pages/privacy-policy
+- type: Newsroom
+  url: https://www.hazel.co/news
+- type: GettingStarted
+  url: https://hazel.co/get-started
+- type: DomainSecurity
+  url: security/beme-health-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.hazel.co/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via JavaScript and no machine‑readable spec was found.
+  evidence:
+    - url: https://my.hazel.co/openapi.json
+      status: 200
+    - url: https://my.hazel.co/openapi.yaml
+      status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
